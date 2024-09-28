@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Resume {
+private:
+    string name;
+    string address;
+    string email;
+    string phone;
+    string education;
+    string experience;
+    string skills;
+
+public:
+    // Constructor to initialize the resume data
+    Resume() {
+        name = "Atharv Tulsankar";
+        address = "Maharashtra , Baramati, India";
+        email = "atharvatulsankar.com";
+        phone = "9688547569";
+        education = "Bachelor of AI, Pune University, 2022";
+        experience = "Software Developer Intern, ABC Corp (June 2021 - Aug 2021)\n"
+                     "Freelance Web Developer (Sep 2020 - Present)";
+        skills = "C++, Java, Python, HTML, CSS, JavaScript, SQL, Problem-solving, Teamwork";
+    }
+
+    // Function to display the resume details
+    void displayResume() {
+        cout << "------------------------------" << endl;
+        cout << "          RESUME              " << endl;
+        cout << "------------------------------" << endl;
+        cout << "Name: " << name << endl;
+        cout << "Address: " << address << endl;
+        cout << "Email: " << email << endl;
+        cout << "Phone: " << phone << endl;
+        cout << "\nEducation:\n" << education << endl;
+        cout << "\nExperience:\n" << experience << endl;
+        cout << "\nSkills:\n" << skills << endl;
+        cout << "------------------------------" << endl;
+    }
+};
+
+int main() {
+    Resume myResume;
+    myResume.displayResume();
+    return 0;
+}
